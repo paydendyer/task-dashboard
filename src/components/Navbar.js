@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import * as FaIcons from "react-icons/fa"
+import * as FaIcons from "react-icons/fa" //npm install react-icons --save
 import * as AiIcons from "react-icons/ai"
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';

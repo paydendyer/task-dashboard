@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ToDo from './pages/ToDo';
 import Notes from './pages/Notes';
 const App = () => {
-
+  
   return ( 
     <>
   <BrowserRouter>

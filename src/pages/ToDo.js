@@ -1,10 +1,13 @@
 import React from 'react';
+import ToDoList  from '../components/ToDoList';
 
-function ToDo() {
-  return (
-    <div className='todo'>
-      <h1>To Do</h1>
+const ToDo = () => {
+  return(
+    <div className="ToDo">
+      <h1> To Do List</h1>
+      <ToDoList />
     </div>
-  );
+  )
 }
+
 export default ToDo;

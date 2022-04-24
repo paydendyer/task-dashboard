@@ -102,25 +102,26 @@ textarea:focus {
   padding-right: 15px;
   padding-left: 15px;
   min-height: 100vh;
-  background-color: white;
+  background-color: #FFF9EC;
 }
-
+input {
+  margin: 2px 5px;
+}
 #to-do-form input {
   background-color: blue;
   border: 0;
-  width: 150px;
+  width: 175px;
   height: 50px;
   padding: 0 20px;
-  margin: 20px;
-  border-radius: 15px;
+  margin: 20px auto;
+  border-radius: 25px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font-size: 1em;
+  font-size: 1.1em;
+  color: white;
 }
 @media screen and (min-width: 768px) {
   #to-do-form input {
     width: 200px;
-    height: 75px;
-    font-size: 1.5em;
   }
   }
   form#to-do-form {
@@ -144,19 +145,18 @@ form#to-do-form {
 #to-do-form button {
   height: 50px;
   width: 80px;
-  border-radius: 15px;
+  border-radius: 25px;
   border: 0;
   background-color: orange;
   cursor: pointer;
   color: white;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font-size: 1em;
+  font-size: 1.1em;
+  margin-left: 25px;
 }
 @media screen and (min-width: 768px) {
   #to-do-form button {
     width: 100px;
-    height: 75px;
-    font-size: 1.5em;
   }
   }
 .list {
@@ -165,14 +165,12 @@ form#to-do-form {
   height: 50px;
   margin: 20px auto;
   background-color: #fef68a;
-  border-radius: 15px;
+  border-radius: 25px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (min-width: 768px) {
   .list {
     width: 30rem;
-    height: 75px;
-    margin: 40px auto;
   }
 }
 .list p {
@@ -180,11 +178,6 @@ form#to-do-form {
   position: relative;
   cursor: pointer;
   align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .list p {
-    padding: 25px;
-  }
 }
 
 .list p span {
@@ -194,7 +187,7 @@ form#to-do-form {
 }
 
 .todo-delete {
-  margin: 0 5px;
+  margin: 7px 5px;
   font-size: 15px;
   align-items: center;
 }
@@ -202,7 +195,7 @@ form#to-do-form {
 .list p input {
   background-color: transparent;
   border: 0;
-  font-size: 1em;
+  font-size: 1.1em;
   outline: none;
 }
 @media screen and (min-width: 768px) {
@@ -211,6 +204,9 @@ form#to-do-form {
   }
 }
 .todo-h1 {
-  padding-top: 2%;
+  padding: 3%;
   font-weight: bold;
+}
+h1 {
+  font-size: 2em;
 }

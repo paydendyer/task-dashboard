@@ -117,9 +117,20 @@ textarea:focus {
   font-size: 1em;
 }
 @media screen and (min-width: 768px) {
+  #to-do-form input {
+    width: 200px;
+    height: 75px;
+    font-size: 1.5em;
+  }
+  }
+  form#to-do-form {
+    margin: 20px auto;
+    width: 20rem;
+  }
+@media screen and (min-width: 768px) {
 form#to-do-form {
   margin: 20px auto;
-  width: 21.25rem;
+  width: 25rem;
 }
 }
 #to-do-form input::placeholder {
@@ -133,7 +144,7 @@ form#to-do-form {
 #to-do-form button {
   height: 50px;
   width: 80px;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 0;
   background-color: orange;
   cursor: pointer;
@@ -141,7 +152,13 @@ form#to-do-form {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-size: 1em;
 }
-
+@media screen and (min-width: 768px) {
+  #to-do-form button {
+    width: 100px;
+    height: 75px;
+    font-size: 1.5em;
+  }
+  }
 .list {
   color: black;
   width: 21.25rem;

@@ -1,17 +1,38 @@
-//Returns an unordered list
+//Returns a list of todos
 import React from 'react';
+import { MdDeleteForever } from 'react-icons/md';
 
-const todos = ["Finish project", "Read book", "Clean apartment", "Do Laundry"];
-const Todo = props => <li>{props.todo}</li>;
 
-const TodoList = () => {
+function TodoList(props){
+  const items = props.items;
+  const listItems = items.map(item =>
+  {
+    return <div className="list" key={item.key}>
+      <p>
+        <input 
+        type="text" 
+        id={item.key} 
+        value={item.text} 
+        onChange ={
+          (e) =>{
+            props.setUpdate(e.target.value, item.key)
+          }
+        } />
+      <span>
+      <MdDeleteForever className="todo-delete"
+        onClick={ () => props.deleteItem(item.key)
+
+        }
+      ></MdDeleteForever>
+      </span>
+    </p>
+    </div>
+  })
   return(
-    <ul>
-      {todos.map(todo => (      //returns a new array with a listitem for every todo
-        <Todo todo={todo}key={todo}></Todo>
-      ))}
-    </ul>
+    <div>{listItems}</div>
+
   )
+
 }
 
 export default TodoList;

@@ -1,17 +1,8 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html {
+  font-family: 'Public Sans', sans-serif;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -103,25 +94,106 @@ textarea:focus {
   outline: none;
 }
 
-.todo-list {
-  background: #e8e8e8;
-  border-radius: 4px;
-  max-width: 400px;
-  padding: 5px;
+/* To Do App */
+.todo-container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+  background-color: white;
 }
 
-.todo {
+#to-do-form input {
+  background-color: blue;
+  border: 0;
+  width: 150px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 1em;
+}
+@media screen and (min-width: 768px) {
+form#to-do-form {
+  margin: 20px auto;
+  width: 21.25rem;
+}
+}
+#to-do-form input::placeholder {
+  color: white;
+}
+/* Removes outline when clicked */
+#to-do-form input:focus, #to-do-form button:focus {
+  outline: none;
+}
+
+#to-do-form button {
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0;
+  background-color: orange;
+  cursor: pointer;
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 1em;
+}
+
+.list {
+  color: black;
+  width: 21.25rem;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #fef68a;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 768px) {
+  .list {
+    width: 30rem;
+    height: 75px;
+    margin: 40px auto;
+  }
+}
+.list p {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
   align-items: center;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  display: flex;
-  font-size: 18px;
-  justify-content: space-between;
-  margin-bottom: 6px;
-  padding: 3px 15px;
+}
+@media screen and (min-width: 768px) {
+  .list p {
+    padding: 25px;
+  }
 }
 
-#checkbox {
-  color: green;
+.list p span {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.todo-delete {
+  margin: 0 5px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.list p input {
+  background-color: transparent;
+  border: 0;
+  font-size: 1em;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .list p input {
+    font-size: 1.5em;
+  }
+}
+.todo-h1 {
+  padding-top: 2%;
+  font-weight: bold;
 }

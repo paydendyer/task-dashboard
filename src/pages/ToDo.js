@@ -47,15 +47,17 @@ class ToDo extends React.Component {
       })
   }
   setUpdate(text, key){
-    const items = this.state.items;
-    items.map(item =>{
+    //loop through and find key value
+    const items = this.state.items.map((item) => {
       if(item.key===key){
         item.text=text;
       }
+      //return modified item
+      return item;
     })
+    //set new object into state
     this.setState({
-      items: items
-     })
+      items: items });
   }
   render() {
   return(

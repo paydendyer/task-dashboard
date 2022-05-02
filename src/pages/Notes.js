@@ -65,7 +65,7 @@ return (
     <div className="container">
     <Header handleToggleDarkMode={setDarkMode} />
     <Search handleSearchNote={setSearchText}/>
-    <NotesList 
+    <NotesList
 notes={notes.filter((note)=> 
   note.text.toLowerCase().includes(searchText)
   )} 

@@ -4,10 +4,14 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ToDo from './pages/ToDo';
 import Notes from './pages/Notes';
 import Calendar from './pages/Calendar';
+import Header from './components/Header';
+import { useState } from 'react';
 const App = () => {
-  
+  const [darkMode, setDarkMode] = useState(false);
   return ( 
     <>
+    <div className={`${darkMode && 'dark-mode'}`}>
+    <Header handleToggleDarkMode={setDarkMode} />
   <BrowserRouter>
     <Navbar />
     <Routes>
@@ -16,6 +20,7 @@ const App = () => {
       <Route exact path='/Calendar' element={<Calendar/>} />
     </Routes>
   </BrowserRouter>
+  </div>
   </>
   );
 };

@@ -31,28 +31,33 @@ body, html {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .note.new {
-  background-color: #67d7cc;
+  background-color: blue;
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: #67d7cc;
+  background-color: blue;
+  color: white;
 }
-
+textarea::placeholder {
+  color: white;
+}
 textarea:focus {
   outline: none;
 }
 
 .save {
-  background-color: #e1e1e1;
+  background-color: orange;
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .save:hover {
-  background-color: #ededed;
+  background-color: rgb(241, 190, 95);
   cursor: pointer;
 }
 
@@ -72,7 +77,9 @@ textarea:focus {
   align-items: center;
   justify-content: space-between;
 }
-
+.character-limit {
+  color: white;
+}
 .delete-icon {
   cursor: pointer;
 }
@@ -102,7 +109,6 @@ textarea:focus {
   padding-right: 15px;
   padding-left: 15px;
   min-height: 100vh;
-  background-color: #FFF9EC;
 }
 input {
   margin: 2px 5px;

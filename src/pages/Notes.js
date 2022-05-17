@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid'; //npm i nanoid
 import { useState, useEffect } from 'react';
 import NotesList from '../components/NotesList';
 import Search from '../components/Search';
-import Header from '../components/Header';
 
 const Notes = () => {
   const [notes, setNotes] = useState([
@@ -26,7 +25,6 @@ const Notes = () => {
 
 const [searchText, setSearchText] = useState('');
 
-const [darkMode, setDarkMode] = useState(false);
 
 useEffect(() => {
   const savedNotes = JSON.parse(
@@ -61,9 +59,7 @@ const deleteNote = (id) => {
 
 return ( 
   <>
-  <div className={`${darkMode && 'dark-mode'}`}>
     <div className="container">
-    <Header handleToggleDarkMode={setDarkMode} />
     <Search handleSearchNote={setSearchText}/>
     <NotesList
 notes={notes.filter((note)=> 
@@ -75,7 +71,7 @@ handleDeleteNote={deleteNote}
 
 
 </div>
-</div></>
+</>
 );
 };
 export default Notes;

@@ -5,7 +5,20 @@ class ToDo extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      items:[],
+      items:[
+        {
+          key: '1',
+          text: "This is my first task"
+        },
+        {
+          key: '2',
+          text: "This is my second task"
+        },
+        {
+          key: '3',
+          text: "This is my third task"
+        }
+      ],
       currentItem:{
         text: '',
         key: ''

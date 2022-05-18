@@ -1,6 +1,7 @@
 //Returns a list of todos
 import React from 'react';
 import { MdDeleteForever } from 'react-icons/md';
+import FlipMove from 'react-flip-move';
 
 
 function TodoList(props){
@@ -29,7 +30,12 @@ function TodoList(props){
     </div>
   })
   return(
-    <div>{listItems}</div>
+    
+    <div>
+      <FlipMove duration={500} easing="ease-in-out">
+        {listItems}
+        </FlipMove>
+      </div>
 
   )
 

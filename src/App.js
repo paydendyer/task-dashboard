@@ -4,14 +4,14 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ToDo from './pages/ToDo';
 import Notes from './pages/Notes';
 import Calendar from './pages/Calendar';
-import Header from './components/Header';
+import ToggledarkMode from './components/ToggledarkMode';
 import { useState } from 'react';
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   return ( 
     <>
     <div className={`${darkMode && 'dark-mode'}`}>
-    <Header handleToggleDarkMode={setDarkMode} />
+    <ToggledarkMode handleToggleDarkMode={setDarkMode} />
   <BrowserRouter>
     <Navbar />
     <Routes>

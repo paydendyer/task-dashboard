@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({ handleToggleDarkMode }) => {
+const ToggledarkMode = ({ handleToggleDarkMode }) => {
   return(
     <div className="header">
       <button onClick={() => 
@@ -14,4 +14,4 @@ const Header = ({ handleToggleDarkMode }) => {
     </div>
   )
 }
-export default Header;
+export default ToggledarkMode;

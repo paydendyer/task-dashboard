@@ -1,5 +1,5 @@
 import React from 'react';
-import { nanoid } from 'nanoid'; //npm i nanoid
+import { nanoid } from 'nanoid'; 
 import { useState, useEffect } from 'react';
 import NotesList from '../components/NotesList';
 import Search from '../components/Search';
@@ -60,6 +60,7 @@ const deleteNote = (id) => {
 return ( 
   <>
     <div className="container">
+      <h1 className='notes-h1'> Notes</h1>
     <Search handleSearchNote={setSearchText}/>
     <NotesList
 notes={notes.filter((note)=> 

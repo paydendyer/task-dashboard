@@ -59,8 +59,8 @@ const deleteNote = (id) => {
 
 return ( 
   <>
-    <div className="container">
-      <h1 className='notes-h1'> Notes</h1>
+    <div className="container bg-gradient-to-r from-cyan-500 to-blue-500">
+      <h1 className='notes-h1 text-center text-2xl mb-5 pt-5'> Notes</h1>
     <Search handleSearchNote={setSearchText}/>
     <NotesList
 notes={notes.filter((note)=> 
@@ -68,8 +68,8 @@ notes={notes.filter((note)=>
   )} 
 handleAddNote={addNote}
 handleDeleteNote={deleteNote}
-/>
 
+/>
 
 </div>
 </>

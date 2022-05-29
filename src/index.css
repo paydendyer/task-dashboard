@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 body, html {
   font-family: 'Public Sans', sans-serif;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .header {
   display: flex;
@@ -23,7 +24,13 @@ body, html {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  min-height: 100vh;
+  padding-bottom: 3%;
+  max-height: 100vh;
+  background-color: white;
+  border-radius: 5%;
+}
+.dark-mode > .container {
+  background: black;
 }
 .notes-list {
   display: grid;
@@ -33,7 +40,10 @@ body, html {
 .note.new {
   background-color: blue;
 }
-
+.notes-h1 {
+  padding-top: 3%;
+  text-align: center;
+}
 textarea {
   border: none;
   resize: none;
@@ -108,7 +118,13 @@ textarea:focus {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  min-height: 100vh;
+  padding-bottom: 3%;
+  max-height: 100vh;
+  background-color: white;
+  border-radius: 5%;
+}
+.dark-mode > .todo-container {
+  background: black;
 }
 input {
   margin: 2px 5px;
@@ -211,8 +227,74 @@ form#to-do-form {
 }
 .todo-h1 {
   padding: 3%;
-  font-weight: bold;
+  text-align: center;
 }
-h1 {
-  font-size: 2em;
+.list__item-checked {
+  opacity: 0.6;
+}
+/* Home Page */
+.h1-home {
+  text-align: center;
+}
+
+/* Weather */
+
+.weather-container p {
+  font-size: 1.6rem;
+}
+
+.weather-h2 {
+  font-size: 6rem;
+  color: blue;
+}
+.weather-container {
+  max-width: 700px;
+  max-height: 700px;
+  margin: auto;
+  padding: 0 1 rem;
+  position: relative;
+  background-color: #fef68a;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top {
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  border-radius: 5%;
+  background-color: orange;
+}
+.description {
+  position: relative;
+  right: -40%;
+  transform: rotate(269deg);
+  padding-left: 15%;
+}
+.bold {
+  font-weight: 700;
+}
+.weather-search {
+  text-align: center;
+  padding: 1rem;
+  background-color: blue;
+  border-radius: 5%;
+}
+.weather-container input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: none;
+  background-color: orange;
+  text-align: center;
+}
+::placeholder {
+  color: black;
 }

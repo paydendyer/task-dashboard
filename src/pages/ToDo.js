@@ -22,7 +22,7 @@ class ToDo extends React.Component {
       currentItem:{
         text: '',
         key: ''
-      }
+      },
     }
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
@@ -74,9 +74,9 @@ class ToDo extends React.Component {
   }
   render() {
   return(
-    <div className="todo-container">
+    <div className="todo-container bg-gradient-to-r from-cyan-500 to-blue-500">
     <header>
-      <h1 className="todo-h1"> To Do</h1>
+      <h1 className="todo-h1 text-center text-2xl mb-5 pt-5"> To Do</h1>
       <form id="to-do-form" onSubmit={this.addItem}>
         <input type="text" placeholder="Enter Task"
         value={this.state.currentItem.text}

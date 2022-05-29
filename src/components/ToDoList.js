@@ -2,14 +2,23 @@
 import React from 'react';
 import { MdDeleteForever } from 'react-icons/md';
 import FlipMove from 'react-flip-move';
+import { useState } from 'react';
 
 
 function TodoList(props){
   const items = props.items;
+  const [check, setCheck] = useState(false);
   const listItems = items.map(item =>
   {
     return <div className="list" key={item.key}>
       <p>
+      <div className={check ? "list__item list__item-checked" : "list__item"}>
+      <input
+        type="checkbox"
+        className="list__check"
+        checked={item.check}
+        onChange={() => setCheck(!check)}
+      />
         <input 
         type="text" 
         id={item.key} 
@@ -26,6 +35,7 @@ function TodoList(props){
         }
       ></MdDeleteForever>
       </span>
+      </div>
     </p>
     </div>
   })

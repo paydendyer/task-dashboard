@@ -1,10 +1,10 @@
 import React from 'react';
 import { MdDeleteForever } from 'react-icons/md';
-import Draggable from 'react-draggable';
+//import Draggable from 'react-draggable';
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
   return(
-    <Draggable>
+    //<Draggable>
     <div className="note">
       <span>{text}</span>
       <div className="note-footer">
@@ -16,7 +16,7 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
           />
       </div>
     </div>
-    </Draggable>
+    //</Draggable>
   )
 };
 

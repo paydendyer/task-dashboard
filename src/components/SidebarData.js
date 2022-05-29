@@ -23,5 +23,11 @@ export const SidebarData = [
     path: '/Calendar',
     icon: <IofiveIcons.IoCalendarNumberOutline />,
     cName: 'nav-text'
+  },
+  {
+    title: 'Weather',
+    path: '/Weather',
+    icon: <IoIcons.IoMdCloudOutline />,
+    cName: 'nav-text'
   }
 ]

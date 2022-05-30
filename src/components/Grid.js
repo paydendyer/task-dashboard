@@ -10,7 +10,7 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 
 
 const layout = [
-  { i: "tile-two", x: 0, y: 0, w: 1, h: 1 },
+  { i: "tile-two", x: 0, y: 0, w: 1, h: 2 },
   { i: "tile-three", x: 2, y: 0, w: 1, h: 1 },
   { i: "tile-four", x: 4, y: 0, w: 1, h: 1 },
 ];
@@ -42,10 +42,13 @@ export const Grid = () => {
         <GridItemWrapper key="tile-two">
           <GridItemContent><Notes /></GridItemContent>
         </GridItemWrapper>
+
         <GridItemWrapper key="tile-three">
           <GridItemContent><ToDo/></GridItemContent>
         </GridItemWrapper>
-        <GridItemWrapper key="tile-four"><GridItemContent><Weather/></GridItemContent></GridItemWrapper>
+
+        <GridItemWrapper key="tile-four">
+          <GridItemContent><Weather/></GridItemContent></GridItemWrapper>
       </ResponsiveGridLayout>
     </Root>
   );

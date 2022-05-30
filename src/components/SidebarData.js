@@ -5,6 +5,12 @@ import * as IofiveIcons from "react-icons/io5";
 
 export const SidebarData = [
   {
+    title: 'Home',
+    path: '/Home',
+    icon: <GrIcons.GrHome />,
+    cName: 'nav-text'
+  },
+  {
     title: 'Notes',
     path: '/Notes',
     icon: <GrIcons.GrNotes />,

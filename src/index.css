@@ -25,7 +25,7 @@ body, html {
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 3%;
-  max-height: 100vh;
+  min-height: 100vh;
   background-color: white;
   border-radius: 5%;
 }
@@ -239,19 +239,36 @@ form#to-do-form {
 
 /* Weather */
 
-.weather-container p {
-  font-size: 1.6rem;
+.weather-background {
+  background: white;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  max-width: 700px;
+  max-height: 800px;
 }
-
+.dark-mode > .weather-background {
+  background-color: black;
+}
+.weather-container p {
+  font-size: 1.3rem;
+}
+.weather-h1 {
+  text-align: center;
+}
 .weather-h2 {
   font-size: 6rem;
   color: blue;
 }
 .weather-container {
-  max-width: 700px;
+  max-width: 600px;
   max-height: 700px;
   margin: auto;
-  padding: 0 1 rem;
   position: relative;
   background-color: #fef68a;
   border-radius: 5%;

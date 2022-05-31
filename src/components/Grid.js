@@ -34,9 +34,10 @@ export const Grid = () => {
       <ResponsiveGridLayout
         layouts={{ lg: layout }}
         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-        cols={{ lg: 2, md: 2, sm: 2, xs: 2, xxs: 1 }}
+        cols={{ lg: 2, md: 2, sm: 1, xs: 1, xxs: 1 }}
         rowHeight={700}
         width={1000}
+        isDraggable= {false}
       >
         <Link to={"../pages/Notes"}>View Full Page</Link>
         <GridItemWrapper key="tile-two">

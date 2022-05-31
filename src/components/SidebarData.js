@@ -2,6 +2,7 @@ import React from 'react'
 import * as IoIcons from 'react-icons/io';
 import * as GrIcons from 'react-icons/gr';
 import * as IofiveIcons from "react-icons/io5";
+import * as FaIcons from "react-icons/fa";
 
 export const SidebarData = [
   {
@@ -34,6 +35,12 @@ export const SidebarData = [
     title: 'Weather',
     path: '/Weather',
     icon: <IoIcons.IoMdCloudOutline />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Budget',
+    path: '/Budget',
+    icon: <FaIcons.FaMoneyCheckAlt />,
     cName: 'nav-text'
   }
 ]

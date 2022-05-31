@@ -22,8 +22,8 @@ const App = () => {
       <Route exact path='/ToDo' element={<ToDo/>} />
       <Route exact path='/Notes' element={<Notes/>} />
       <Route exact path='/Calendar' element={<Calendar/>} />
+      <Route exact path='/Weather' element={<Weather/>} />    
       <Route exact path='/Budget' element={<Budget/>} />
-      <Route exact path='/Weather' element={<Weather/>} />
     </Routes>
   </BrowserRouter>
   </div>

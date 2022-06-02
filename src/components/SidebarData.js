@@ -1,9 +1,7 @@
 import React from 'react'
 import * as IoIcons from 'react-icons/io';
 import * as GrIcons from 'react-icons/gr';
-import * as IofiveIcons from "react-icons/io5";
 import * as FaIcons from "react-icons/fa";
-
 export const SidebarData = [
   {
     title: 'Home',
@@ -26,12 +24,6 @@ export const SidebarData = [
   },
 
   {
-    title: 'Calendar',
-    path: '/Calendar',
-    icon: <IofiveIcons.IoCalendarNumberOutline />,
-    cName: 'nav-text'
-  },
-  {
     title: 'Weather',
     path: '/Weather',
     icon: <IoIcons.IoMdCloudOutline />,
@@ -40,7 +32,7 @@ export const SidebarData = [
   {
     title: 'Budget',
     path: '/Budget',
-    icon: <FaIcons.FaMoneyCheckAlt />,
+    icon: <FaIcons.FaRegMoneyBillAlt />,
     cName: 'nav-text'
   }
 ]

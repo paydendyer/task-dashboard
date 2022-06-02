@@ -83,7 +83,7 @@ textarea:focus {
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
   margin-top: 10px;
-  margin-left: 68px;
+  margin-left: 135px;
 }
 
 .save:hover {
@@ -267,7 +267,6 @@ form#to-do-form {
 
 .weather-background {
   background: white;
-  position: relative;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -275,7 +274,7 @@ form#to-do-form {
   border-radius: 15px;
   padding-top: 1%;
   padding-bottom: 3%;
-  max-width: 700px;
+  max-width: 960px;
   max-height: 800px;
   margin-top: 10px;
 }

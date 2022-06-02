@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ToDo from './pages/ToDo';
 import Notes from './pages/Notes';
@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import { useState } from 'react';
 import Budget from './pages/Budget';
 import Weather from './pages/Weather';
+import SideBar from './components/SideBar';
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   return ( 
@@ -16,7 +17,7 @@ const App = () => {
     <div className={`${darkMode && 'dark-mode'}`}>
     <ToggledarkMode handleToggleDarkMode={setDarkMode} />
   <BrowserRouter>
-    <Navbar />
+    <SideBar />
     <Routes>
     <Route exact path='/Home' element={<Home/>} />
       <Route exact path='/ToDo' element={<ToDo/>} />

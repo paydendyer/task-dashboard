@@ -5,13 +5,13 @@ body, html {
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .header {
   display: flex;
@@ -377,11 +377,11 @@ ul {
   margin: 0; /* Remove margins */
 }
 
-ul li  {
+.expense-list li  {
   border: 1px solid #ddd; /* Add a thin border to each list item */
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6; /* Add a grey background color */
-  padding: 40px; /* Add some padding */
+  padding: 20px; /* Add some padding */
 }
 .props-name {
   float: left;
@@ -389,7 +389,7 @@ ul li  {
 }
 .props-cost {
   float: right;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .budget-delete {
   float: right;
@@ -410,8 +410,8 @@ input#name {
   height: 30px;
 }
 .label-name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .label-cost {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }

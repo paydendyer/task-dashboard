@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 body, html {
   font-family: 'Public Sans', sans-serif;
+}
+body {
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+}
+.dark-mode body {
+  background-color: black;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.1rem !important;
 }
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
 }
 .header {
   display: flex;
@@ -31,12 +37,18 @@ h2 {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 10px;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 3%;
   max-height: 100vh;
   background-color: white;
   border-radius: 15px;
+}
+@media screen and (max-width: 1099px) {
+  .container {
+    margin-left: 63px;
+  }
 }
 .dark-mode > .container {
   background: black;
@@ -57,10 +69,9 @@ textarea {
   border: none;
   resize: none;
   background-color: blue;
-  color: white;
 }
 textarea::placeholder {
-  color: white;
+  color: white !important;
 }
 textarea:focus {
   outline: none;
@@ -72,7 +83,7 @@ textarea:focus {
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 68px;
 }
 
 .save:hover {
@@ -125,12 +136,18 @@ textarea:focus {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 10px;
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 3%;
   max-height: 100vh;
   background-color: white;
   border-radius: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .todo-container {
+    margin-left: 63px;
+  }
 }
 .dark-mode > .todo-container {
   background: black;
@@ -166,7 +183,7 @@ form#to-do-form {
 }
 }
 #to-do-form input::placeholder {
-  color: white;
+  color: white !important;
 }
 /* Removes outline when clicked */
 #to-do-form input:focus, #to-do-form button:focus {
@@ -235,7 +252,7 @@ form#to-do-form {
   }
 }
 .todo-h1 {
-  padding: 3%;
+  padding-top: 3%;
   text-align: center;
 }
 .list__item-checked {
@@ -260,18 +277,24 @@ form#to-do-form {
   padding-bottom: 3%;
   max-width: 700px;
   max-height: 800px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  .weather-background {
+    margin-left: 63px;
+  }
 }
 .dark-mode > .weather-background {
   background-color: black;
 }
 .weather-container p {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
 }
 .weather-h1 {
   text-align: center;
 }
 .weather-h2 {
-  font-size: 6rem;
+  font-size: 6rem !important;
   color: blue;
 }
 .weather-container {
@@ -322,7 +345,7 @@ form#to-do-form {
   text-align: center;
 }
 ::placeholder {
-  color: black;
+  color: black !important;
 }
 /* Budget App */
 
@@ -367,9 +390,13 @@ ul {
 
 .edit-button {
   border-radius: 25px;
+  background-color: lightgrey !important;
+  width: 80px;
 }
 .submit-button {
   border-radius: 25px;
+  background-color: lightgrey !important;
+  width: 80px;
 }
 ul {
   list-style-type: none; /* Remove bullets */
@@ -403,11 +430,15 @@ input#cost {
   border-radius: 25px;
   width: 200px;
   height: 30px;
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
 }
 input#name {
   border-radius: 25px;
   width: 200px;
   height: 30px;
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
 }
 .label-name {
   font-size: 1.1rem;

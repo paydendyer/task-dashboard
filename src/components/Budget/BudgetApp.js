@@ -14,6 +14,7 @@ const EditBudget = (props) => {
 			/>
 			<button
 				type='button'
+				className='submit-button'
 				onClick={() => props.handleSaveClick(value)}
 			>
 				Save
@@ -25,7 +26,7 @@ const EditBudget = (props) => {
 const ViewBudget = (props) => {
 	return (
 		<>
-			<span><h2 className="budget-h2">Budget: ${props.budget}</h2></span>
+			<span><h2 className="budget-h2-budget">Budget: ${props.budget}</h2></span>
 			<button type='button' className="edit-button" onClick={props.handleEditClick}>
 				Edit
 			</button>

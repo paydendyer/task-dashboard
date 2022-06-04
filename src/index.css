@@ -1,14 +1,22 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 body, html {
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif; 
+ 
 }
 body {
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-
+   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1)100%);
+   height: 100vh;
+   background-size: 150px;
 }
-.dark-mode body {
+ body .dark-mode {
   background-color: black;
+  margin-bottom: 0px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 h1 {
   font-size: 1.5rem !important;
@@ -33,7 +41,7 @@ h2 {
   color: white;
 }
 
-.container {
+.my-container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -41,17 +49,17 @@ h2 {
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 3%;
-  max-height: 100vh;
   background-color: white;
   border-radius: 15px;
 }
 @media screen and (max-width: 1099px) {
-  .container {
+  .my-container {
     margin-left: 63px;
   }
 }
-.dark-mode > .container {
+.dark-mode .my-container {
   background: black;
+  margin-bottom: 0px;
 }
 .notes-list {
   display: grid;
@@ -390,7 +398,9 @@ ul {
 .edit-button {
   border-radius: 25px;
   background-color: lightgrey !important;
-  width: 80px;
+  width: 68px;
+  float: right;
+  margin-top: -28px;
 }
 .submit-button {
   border-radius: 25px;
@@ -404,18 +414,22 @@ ul {
 }
 
 .expense-list li  {
-  border: 1px solid #ddd; /* Add a thin border to each list item */
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6; /* Add a grey background color */
-  padding: 20px; /* Add some padding */
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 20px; 
+  border-radius: 15px;
+
 }
 .props-name {
   float: left;
   margin-top: -7px;
+  line-height: 15px;
 }
 .props-cost {
   float: right;
   font-size: 1rem;
+  line-height: 15px;
 }
 .budget-delete {
   float: right;
@@ -430,16 +444,40 @@ input#cost {
   width: 200px;
   height: 30px;
   background-color: lightgoldenrodyellow;
+  outline: none;
+  padding-left: 5px;
 }
 input#name {
   border-radius: 25px;
   width: 200px;
   height: 30px;
   background-color: lightgoldenrodyellow;
+  outline: none;
+  padding-left: 5px;
+}
+.dark-mode .label-name {
+  color: white;
 }
 .label-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+.dark-mode .label-cost {
+  color: white;
 }
 .label-cost {
   font-size: 1rem;
+}
+.budget-h2-budget {
+  color: white;
+}
+/* Home Page */
+
+.home-container {
+  margin-left: 60px;
+}
+.dark-mode .my-sidebar {
+  background-color: black;
+}
+.dark-mode .sidebar-icon {
+  color: white;
 }

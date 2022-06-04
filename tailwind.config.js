@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 module.exports = {
+  mode: 'jit',
   content: ['./src/components/SideBar.js'],
   theme: {
     extend: {},
@@ -7,7 +8,7 @@ module.exports = {
   plugins: [
     plugin(function ({ addComponents, theme }) {
       addComponents({
-        borderRadius: theme['hover']
+        borderRadius: theme['hover'],
       })
     })
   ],

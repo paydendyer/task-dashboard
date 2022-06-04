@@ -1,8 +1,8 @@
 import React from 'react';
 import { nanoid } from 'nanoid'; 
 import { useState, useEffect } from 'react';
-import NotesList from '../components/NotesList';
-import Search from '../components/Search';
+import NotesList from '../components/Notes/NotesList';
+import Search from '../components/Notes/Search';
 
 const Notes = () => {
   const [notes, setNotes] = useState([
@@ -59,7 +59,7 @@ const deleteNote = (id) => {
 
 return ( 
   <>
-    <div className="container">
+    <div className="my-container">
       <h1 className='notes-h1'> Notes</h1>
     <Search handleSearchNote={setSearchText}/>
     <NotesList

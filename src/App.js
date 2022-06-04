@@ -1,5 +1,4 @@
 import React from 'react';
-//import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ToDo from './pages/ToDo';
 import Notes from './pages/Notes';
@@ -15,19 +14,19 @@ const App = () => {
   return ( 
     <>
     <div className={`${darkMode && 'dark-mode'}`}>
-    <ToggledarkMode handleToggleDarkMode={setDarkMode} />
-  <BrowserRouter>
-    <SideBar />
-    <Routes>
-    <Route exact path='/Home' element={<Home/>} />
-      <Route exact path='/ToDo' element={<ToDo/>} />
-      <Route exact path='/Notes' element={<Notes/>} />
-      <Route exact path='/Calendar' element={<Calendar/>} />
-      <Route exact path='/Weather' element={<Weather/>} />    
-      <Route exact path='/Budget' element={<Budget/>} />
-    </Routes>
-  </BrowserRouter>
-  </div>
+      <ToggledarkMode handleToggleDarkMode={setDarkMode} />
+      <BrowserRouter>
+        <SideBar />
+        <Routes>
+        <Route exact path='/Home' element={<Home/>} />
+          <Route exact path='/ToDo' element={<ToDo/>} />
+          <Route exact path='/Notes' element={<Notes/>} />
+          <Route exact path='/Calendar' element={<Calendar/>} />
+          <Route exact path='/Weather' element={<Weather/>} />    
+          <Route exact path='/Budget' element={<Budget/>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   </>
   );
 };

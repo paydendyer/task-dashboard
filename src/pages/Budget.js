@@ -23,7 +23,7 @@ const Budget = () => {
       <ExpenseTotal/>
     </div>
     </div>
-    <h2 className="expenses"> Expenses</h2>
+    <h2 className="expenses"> Expense</h2>
     <div>
       <div className="expenselist">
         <ExpenseList />

@@ -157,7 +157,7 @@ textarea:focus {
     margin-left: 63px;
   }
 }
-.dark-mode > .todo-container {
+.dark-mode .todo-container {
   background: black;
 }
 input {
@@ -291,7 +291,7 @@ form#to-do-form {
     margin-left: 63px;
   }
 }
-.dark-mode > .weather-background {
+.dark-mode .weather-background {
   background-color: black;
 }
 .weather-container p {

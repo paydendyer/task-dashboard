@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compilecss": "npx tailwindcss -i src/css/input.css -o src/css/output.css "
+    "compilecss": "npx tailwindcss -i src/css/input.css -o src/css/output.css ",
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -29,6 +29,17 @@ class ToDo extends React.Component {
     this.deleteItem = this.deleteItem.bind(this);
     this.setUpdate = this.setUpdate.bind(this);
   }
+  componentDidMount() {
+    const items = JSON.parse(localStorage.getItem('react-todo-data'));
+    if(items) {
+      this.setState(() => {
+        return {items}
+      })
+    }
+  }
+  componentDidUpdate() {
+    localStorage.setItem('react-todo-data', JSON.stringify(this.state.todos));
+  }
   handleInput(e) {
     this.setState({
       currentItem:{

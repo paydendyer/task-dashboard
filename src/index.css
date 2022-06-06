@@ -341,7 +341,7 @@ form#to-do-form {
   text-align: center;
   padding: 1rem;
   background-color: blue;
-  border-radius: 5%;
+  border-radius: 15px;
 }
 .weather-container input {
   padding: .7rem 1.5rem;
@@ -398,14 +398,20 @@ ul {
 .edit-button {
   border-radius: 25px;
   background-color: lightgrey !important;
-  width: 68px;
+  width: 50px;
   float: right;
   margin-top: -28px;
+  margin-right: 5px;
 }
-.submit-button {
+.submit-buttonn {
   border-radius: 25px;
   background-color: lightgrey !important;
-  width: 80px;
+  width: 60px !important;
+  margin-left: 5px;
+} 
+.submit-button {
+  display: inline !important;
+  width: 80px !important;
 }
 ul {
   list-style-type: none; /* Remove bullets */

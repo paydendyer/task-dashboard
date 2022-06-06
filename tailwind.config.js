@@ -1,7 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 module.exports = {
-  mode: 'jit',
-  content: ['./src/components/SideBar.js'],
+  content: ['./src/components/SideBar.js', './src/components/'],
   theme: {
     extend: {},
   },

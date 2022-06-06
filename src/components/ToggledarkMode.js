@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/output.css";
 
 const ToggledarkMode = ({ handleToggleDarkMode }) => {
   return(

@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react';
 import { AppContext } from '../../context/AppContext';
+import "../../css/output.css";
 
 const EditBudget = (props) => {
 	const [value, setValue] = useState(props.budget);
@@ -14,7 +15,7 @@ const EditBudget = (props) => {
 			/>
 			<button
 				type='button'
-				className='submit-button'
+				className='submit-buttonn'
 				onClick={() => props.handleSaveClick(value)}
 			>
 				Save

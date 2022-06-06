@@ -15,7 +15,7 @@ const App = () => {
     <>
     <div className={`${darkMode && 'dark-mode'}`}>
       <ToggledarkMode handleToggleDarkMode={setDarkMode} />
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <SideBar />
         <Routes>
           <Route exact path='/Home' element={<Home/>} />

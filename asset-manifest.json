@@ -1,13 +1,13 @@
 {
-  "main.css": "/task-dashboard/static/css/main.f9a3cfb2.chunk.css",
-  "main.js": "/task-dashboard/static/js/main.386ef4ef.chunk.js",
-  "main.js.map": "/task-dashboard/static/js/main.386ef4ef.chunk.js.map",
-  "runtime~main.js": "/task-dashboard/static/js/runtime~main.705be681.js",
-  "runtime~main.js.map": "/task-dashboard/static/js/runtime~main.705be681.js.map",
-  "static/js/2.09e1dad3.chunk.js": "/task-dashboard/static/js/2.09e1dad3.chunk.js",
-  "static/js/2.09e1dad3.chunk.js.map": "/task-dashboard/static/js/2.09e1dad3.chunk.js.map",
-  "index.html": "/task-dashboard/index.html",
-  "precache-manifest.f7681ff5c7c511a79cc7c3e718a9d265.js": "/task-dashboard/precache-manifest.f7681ff5c7c511a79cc7c3e718a9d265.js",
-  "service-worker.js": "/task-dashboard/service-worker.js",
-  "static/css/main.f9a3cfb2.chunk.css.map": "/task-dashboard/static/css/main.f9a3cfb2.chunk.css.map"
+  "main.css": "https://paydendyer.github.io/task-dashboard/static/css/main.f9a3cfb2.chunk.css",
+  "main.js": "https://paydendyer.github.io/task-dashboard/static/js/main.103f5890.chunk.js",
+  "main.js.map": "https://paydendyer.github.io/task-dashboard/static/js/main.103f5890.chunk.js.map",
+  "runtime~main.js": "https://paydendyer.github.io/task-dashboard/static/js/runtime~main.54610d75.js",
+  "runtime~main.js.map": "https://paydendyer.github.io/task-dashboard/static/js/runtime~main.54610d75.js.map",
+  "static/js/2.22df41b4.chunk.js": "https://paydendyer.github.io/task-dashboard/static/js/2.22df41b4.chunk.js",
+  "static/js/2.22df41b4.chunk.js.map": "https://paydendyer.github.io/task-dashboard/static/js/2.22df41b4.chunk.js.map",
+  "index.html": "https://paydendyer.github.io/task-dashboard/index.html",
+  "precache-manifest.fd6074c7812127ba3a88324a656f28a3.js": "https://paydendyer.github.io/task-dashboard/precache-manifest.fd6074c7812127ba3a88324a656f28a3.js",
+  "service-worker.js": "https://paydendyer.github.io/task-dashboard/service-worker.js",
+  "static/css/main.f9a3cfb2.chunk.css.map": "https://paydendyer.github.io/task-dashboard/static/css/main.f9a3cfb2.chunk.css.map"
 }

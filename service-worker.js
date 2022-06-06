@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/task-dashboard/precache-manifest.f7681ff5c7c511a79cc7c3e718a9d265.js"
+  "https://paydendyer.github.io/task-dashboard/precache-manifest.fd6074c7812127ba3a88324a656f28a3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/task-dashboard/index.html", {
+workbox.routing.registerNavigationRoute("https://paydendyer.github.io/task-dashboard/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

@@ -88,6 +88,7 @@ class ToDo extends React.Component {
     <div className="todo-container">
     <header>
       <h1 className="todo-h1"> To Do</h1>
+      <div class="todo-form">
       <form id="to-do-form" onSubmit={this.addItem}>
         <input type="text" placeholder="Enter Task"
         value={this.state.currentItem.text}
@@ -95,6 +96,7 @@ class ToDo extends React.Component {
         />
         <button type="submit">Add</button>
       </form>
+      </div>
     </header>
     <TodoList items= {this.state.items} 
     deleteItem = {this.deleteItem}

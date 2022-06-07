@@ -61,18 +61,21 @@ return (
   <>
     <div className="my-container">
       <h1 className='notes-h1'> Notes</h1>
-    <Search handleSearchNote={setSearchText}/>
-    <NotesList
-notes={notes.filter((note)=> 
-  note.text.toLowerCase().includes(searchText)
-  )} 
-handleAddNote={addNote}
-handleDeleteNote={deleteNote}
+      <Search handleSearchNote={setSearchText}/>
+      <NotesList  
+          notes={
+            notes.filter((note)=> 
+              
+              note.text.toLowerCase().includes(searchText)
+            
+          )} 
+          handleAddNote={addNote}
+          handleDeleteNote={deleteNote}/>
 
-/>
 
-</div>
-</>
+    </div>
+  </>
 );
 };
+
 export default Notes;

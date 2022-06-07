@@ -2,49 +2,36 @@ import React from 'react';
 import TodoList from '../components/To Do/TodoList';
 
 class ToDo extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-      items:[
+    this.state = {
+      items: [
         {
           key: '1',
           text: "This is my first task"
-        },
-        {
+        }, {
           key: '2',
           text: "This is my second task"
-        },
-        {
+        }, {
           key: '3',
           text: "This is my third task"
         }
       ],
-      currentItem:{
+      currentItem: {
         text: '',
         key: ''
-      },
+      }
     }
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.setUpdate = this.setUpdate.bind(this);
   }
-  /*componentDidMount() {
-    const items = JSON.parse(localStorage.getItem('react-todo-data'));
-    if(items) {
-      this.setState(() => {
-        return {items}
-      })
-    }
-  }
-  componentDidUpdate() {
-    localStorage.setItem('react-todo-data', JSON.stringify(this.state.todos));
-  } */
   handleInput(e) {
     this.setState({
-      currentItem:{
+      currentItem: {
         text: e.target.value,
-        key:Date.now()
+        key: Date.now()
       }
     })
   }
@@ -52,11 +39,14 @@ class ToDo extends React.Component {
     e.preventDefault();
     const newItem = this.state.currentItem;
     console.log(newItem);
-    if(newItem.text!==""){
-      const newItems=[...this.state.items, newItem];
+    if (newItem.text !== "") {
+      const newItems = [
+        ...this.state.items,
+        newItem
+      ];
       this.setState({
         items: newItems,
-        currentItem:{
+        currentItem: {
           text: '',
           key: ''
         }
@@ -64,47 +54,54 @@ class ToDo extends React.Component {
     }
   }
   deleteItem(key) {
-    const filteredItems = this.state.items.filter(item =>
-      item.key!==key);
-      this.setState ({
-        items:filteredItems
-      })
+    const filteredItems = this.state.items.filter(item => item.key !== key);
+    this.setState({items: filteredItems})
   }
-  setUpdate(text, key){
-    //loop through and find key value
+  setUpdate(text, key) { // loop through and find key value
     const items = this.state.items.map((item) => {
-      if(item.key===key){
-        item.text=text;
+      if (item.key === key) {
+        item.text = text;
       }
-      //return modified item
+      // return modified item
       return item;
     })
-    //set new object into state
-    this.setState({
-      items: items });
+    // set new object into state
+    this.setState({items: items});
   }
   render() {
-  return(
-    <div className="todo-container">
-    <header>
-      <h1 className="todo-h1"> To Do</h1>
-      <div class="todo-form">
-      <form id="to-do-form" onSubmit={this.addItem}>
-        <input type="text" placeholder="Enter Task"
-        value={this.state.currentItem.text}
-        onChange={this.handleInput}
-        />
-        <button type="submit">Add</button>
-      </form>
+    return (
+      <div className="todo-container">
+        <header>
+          <h1 className="todo-h1">
+            To Do</h1>
+          <div className="todo-form">
+            <form id="to-do-form"
+              onSubmit={
+                this.addItem
+            }>
+              <input type="text" placeholder="Enter Task"
+                value={
+                  this.state.currentItem.text
+                }
+                onChange={
+                  this.handleInput
+                }/>
+              <button type="submit">Add</button>
+            </form>
+          </div>
+        </header>
+        <TodoList items={
+            this.state.items
+          }
+          deleteItem={
+            this.deleteItem
+          }
+          setUpdate={
+            this.setUpdate
+          }/>
       </div>
-    </header>
-    <TodoList items= {this.state.items} 
-    deleteItem = {this.deleteItem}
-    setUpdate = {this.setUpdate}
-    />
-    </div>
-  )
-}
+    )
+  }
 }
 
 

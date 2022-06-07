@@ -13,28 +13,28 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <>
-      <HashRouter>
-        <div className={
-          `${
-            darkMode && 'dark-mode'
-          }`
-        }>
-          <ToggledarkMode handleToggleDarkMode={setDarkMode}/>
-        </div>
-        <SideBar/>
-        <Routes>
-          <Route exact path='/Home'
-            element={<Home/>}/>
-          <Route exact path='/ToDo'
-            element={<ToDo/>}/>
-          <Route exact path='/Notes'
-            element={<Notes/>}/>
-          <Route exact path='/Weather'
-            element={<Weather/>}/>
-          <Route exact path='/Budget'
-            element={<Budget/>}/>
-        </Routes>
-      </HashRouter>
+      <div className={
+        `${
+          darkMode && 'dark-mode'
+        }`
+      }>
+        <ToggledarkMode handleToggleDarkMode={setDarkMode}/>
+        <HashRouter>
+          <SideBar />
+          <Routes>
+            <Route exact path='/Home'
+              element={<Home/>}/>
+            <Route exact path='/ToDo'
+              element={<ToDo/>}/>
+            <Route exact path='/Notes'
+              element={<Notes/>}/>
+            <Route exact path='/Weather'
+              element={<Weather/>}/>
+            <Route exact path='/Budget'
+              element={<Budget/>}/>
+          </Routes>
+        </HashRouter>
+      </div>
     </>
   );
 };

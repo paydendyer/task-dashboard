@@ -7,15 +7,27 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center
     h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
-    hover:bg-yellow-600 hover:text-white
+    hover:bg-black hover:text-white
     rounded-3xl hover:rounded-xl
     transition-all duration-300 ease-linear
     cursor-pointer;
   }
   .submit-button {
     @apply flex shadow w-32 
-    border-blue-600 border-2 rounded-full 
-    focus:outline-none focus:border-blue-600 px-4 py-2 
-    text-blue-600 hover:bg-blue-600 hover:text-white;
+    border-black border-2 rounded-full 
+    focus:outline-none focus:border-black px-4 py-2 
+    text-black hover:bg-black hover:text-white;
+  }
+  .save {
+    @apply flex shadow w-32 
+    border-black border-2 rounded-full 
+    focus:outline-none focus:border-black px-4 py-2 
+    text-black hover:bg-black hover:text-white;
+  }
+  .edit-button {
+    @apply flex shadow
+    border-black border-2 rounded-full 
+    focus:outline-none focus:border-black px-3  
+    text-black hover:bg-black hover:text-white;
   }
 }

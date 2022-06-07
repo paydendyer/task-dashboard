@@ -23,21 +23,21 @@ const Budget = () => {
       <ExpenseTotal/>
     </div>
     </div>
-    <h2 className="expenses"> Expense</h2>
-    <div>
-      <div className="expenselist">
+   
+    <div className='expenses-group'>
+      <h2 className="expenses"> Expenses</h2>
+      <div className="expenselist"> 
+      
         <ExpenseList />
       </div>
     </div>
+    <div className='add-expenses-group'>
+    <h2 className='add-expenses'>Add Expense</h2>
     <div className='add-expense'>
-    <h2>Add Expense</h2>
-    <div className="mt-3">
-      <div className="column-1">
         <AddExpenseForm />
+        </div>
       </div>
     </div>
-    </div>
-     </div>
      </AppProvider>
   )
 }

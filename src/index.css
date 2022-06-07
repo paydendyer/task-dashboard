@@ -7,7 +7,7 @@ body, html {
  
 }
 body {
-   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1)100%);
+   background-color: #DAC4F7;
    height: 100vh;
    background-size: 150px;
 }
@@ -17,7 +17,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-}
+} 
 h1 {
   font-size: 1.5rem !important;
 }
@@ -25,7 +25,7 @@ h3 {
   font-size: 1.1rem !important;
 }
 h2 {
-  font-size: 1.3rem !important;
+  font-size: 1.2rem !important;
 }
 .header {
   display: flex;
@@ -33,16 +33,12 @@ h2 {
   justify-content: space-between;
 }
 
-.dark-mode {
-  background-color: black;
-}
-
 .dark-mode h1 {
   color: white;
 }
 
 .my-container {
-  max-width: 960px;
+  max-width: 425px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
@@ -52,10 +48,11 @@ h2 {
   background-color: white;
   border-radius: 15px;
 }
-@media screen and (max-width: 1099px) {
-  .my-container {
-    margin-left: 63px;
-  }
+@media screen and (max-width: 425px) {
+.my-container {
+    margin-left: 5rem;
+    margin-right: 1rem;
+}
 }
 .dark-mode .my-container {
   background: black;
@@ -67,7 +64,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .note.new {
-  background-color: blue;
+  background-color: #3A86FF;
 }
 .notes-h1 {
   padding-top: 3%;
@@ -76,7 +73,7 @@ h2 {
 textarea {
   border: none;
   resize: none;
-  background-color: blue;
+  background-color: #3A86FF;
 }
 textarea::placeholder {
   color: white !important;
@@ -86,19 +83,20 @@ textarea:focus {
 }
 
 .save {
-  background-color: orange;
-  border: none;
-  border-radius: 15px;
-  padding: 5px 10px 5px 10px;
   margin-top: 10px;
   margin-left: 135px;
+  width: 135px !important;
 }
 
 .save:hover {
   background-color: rgb(241, 190, 95);
   cursor: pointer;
 }
-
+@media screen and (max-width:405px) {
+  .save {
+    margin-left: 105px;
+  }
+}
 .note{
   background-color: #fef68a;
   border-radius: 10px;
@@ -141,7 +139,7 @@ textarea:focus {
 
 /* To Do App */
 .todo-container {
-  max-width: 960px;
+  max-width: 425px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
@@ -152,12 +150,7 @@ textarea:focus {
   background-color: white;
   border-radius: 15px;
 }
-@media screen and (max-width: 1000px) {
-  .todo-container {
-    margin-left: 63px;
-  }
-}
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 425px) {
   .todo-container {
     margin-left: 80px;
     margin-right: 20px;
@@ -170,9 +163,9 @@ input {
   margin: 2px 5px;
 }
 #to-do-form input {
-  background-color: blue;
+  background-color: #3a86ff;
   border: 0;
-  width: 175px;
+  width: 200px;
   height: 50px;
   padding: 0 20px;
   margin: 20px auto;
@@ -181,21 +174,22 @@ input {
   font-size: 1.1em;
   color: white;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 400px) {
   #to-do-form input {
-    width: 200px;
-  }
-  }
+    width: 180px;
+}
+}
+
   form#to-do-form {
     margin: 20px auto;
-    width: 20rem;
+    width: 25rem;
+    margin-left: 25px;
   }
-@media screen and (min-width: 768px) {
-form#to-do-form {
-  margin: 20px auto;
-  width: 25rem;
-}
-}
+  @media screen and (max-width: 420px) {
+    form#to-do-form {
+      margin-left: 0px;
+    }
+  }
 #to-do-form input::placeholder {
   color: white !important;
 }
@@ -203,9 +197,9 @@ form#to-do-form {
 #to-do-form input:focus, #to-do-form button:focus {
   outline: none;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
   #to-do-form input {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }
 #to-do-form button {
@@ -213,7 +207,7 @@ form#to-do-form {
   width: 80px;
   border-radius: 25px;
   border: 0;
-  background-color: orange;
+  background-color: #FFBE0B;
   cursor: pointer;
   color: white;
   /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
@@ -225,7 +219,7 @@ form#to-do-form {
     width: 100px;
   }
   }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 425px) {
     #to-do-form button {
       width: 68px;
       margin-left: 7px;
@@ -246,12 +240,8 @@ form#to-do-form {
 .list ._checked {
 opacity: .6;
 }
-@media screen and (min-width: 768px) {
-  .list {
-    width: 30rem;
-  }
-}
-@media screen and (max-width: 414px) {
+
+@media screen and (max-width: 425px) {
   .list {
     width: 16rem;
   }
@@ -314,27 +304,28 @@ input.list__check {
   border-radius: 15px;
   padding-top: 1%;
   padding-bottom: 3%;
-  max-width: 960px;
+  max-width: 425px;
   max-height: 800px;
   margin-top: 10px;
 }
-@media screen and (max-width: 800px) {
-  .weather-background {
-    margin-left: 63px;
-  }
+
+@media screen and (max-width: 425px) {
+.weather-background {
+    margin-left: 5rem;
+    margin-right: 1rem;
+}
 }
 .dark-mode .weather-background {
   background-color: black;
 }
 .weather-container p {
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
 }
 .weather-h1 {
   text-align: center;
 }
 .weather-h2 {
   font-size: 6rem !important;
-  color: blue;
 }
 .weather-container {
   max-width: 600px;
@@ -358,7 +349,7 @@ input.list__check {
   text-align: center;
   width: 100%;
   border-radius: 15px;
-  background-color: orange;
+  background-color: #54DD9F;
 }
 .description {
   position: relative;
@@ -372,7 +363,7 @@ input.list__check {
 .weather-search {
   text-align: center;
   padding: 1rem;
-  background-color: blue;
+  background-color: #3A86FF;
   border-radius: 15px;
 }
 .weather-container input {
@@ -380,8 +371,13 @@ input.list__check {
   font-size: 1.2rem;
   border-radius: 25px;
   border: none;
-  background-color: orange;
+  background-color: #FFBE0B;
   text-align: center;
+}
+@media screen and (max-width: 414px) {
+  .weather-container input {
+    max-width: 220px;
+  }
 }
 ::placeholder {
   color: black !important;
@@ -391,6 +387,7 @@ input.list__check {
 .budget-h1 {
   text-align: center;
   padding-top: 2%;
+  font-weight: 600;
 }
 .grid {
   display: grid;
@@ -398,39 +395,52 @@ input.list__check {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .budget-section {
-  background-color: blue;
+  background-color: #3A86FF;
   border-radius: 15px;
   text-align: center;
 }
 .remaining {
-  background-color: orange;
+  background-color: #FFBE0B;
   border-radius: 15px;
   text-align: center;
 }
 .expensetotal {
-  background-color: #fef68a;
+  background-color: #FF674D;
   border-radius: 15px;
   text-align: center;
 }
 .expenses {
   text-align: center;
-  padding-top: 20px;
+  font-weight: 600;
 }
 .expenselist {
   list-style-type: none;
+  background-color: #54DD9F;
+  padding-top: 10px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+.expenses-group {
+  margin-top: 15px;
 }
 ul {
   list-style-type: none;
 }
 .add-expense {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  background-color: #fef68a;
+  border-radius: 15px;
 }
-
+.add-expenses {
+  font-weight: 600;
+  text-align: center;
+}
+.add-expenses-group {
+  margin-top: 15px;
+}
 .edit-button {
-  border-radius: 25px;
-  background-color: lightgrey !important;
-  width: 50px;
+  width: 60px !important;
   float: right;
   margin-top: -28px;
   margin-right: 5px;
@@ -453,10 +463,12 @@ ul {
 
 .expense-list li  {
   border: 1px solid #ddd; 
-  margin-top: -1px; 
+  margin-top: 10px; 
   background-color: #f6f6f6; 
-  padding: 20px; 
+  padding: 15px; 
   border-radius: 15px;
+  margin-right: 1rem;
+  margin-left: 1rem;
 
 }
 .props-name {
@@ -467,13 +479,13 @@ ul {
 .props-cost {
   float: right;
   font-size: 1rem;
-  line-height: 15px;
+  line-height: 5px;
 }
 .budget-delete {
   float: right;
   padding-left: 20px;
+  margin-top: -8px;
 }
-
 .form {
   margin: 10px 20px;
 }
@@ -481,7 +493,6 @@ input#cost {
   border-radius: 25px;
   width: 200px;
   height: 30px;
-  background-color: lightgoldenrodyellow;
   outline: none;
   padding-left: 5px;
 }
@@ -489,18 +500,11 @@ input#name {
   border-radius: 25px;
   width: 200px;
   height: 30px;
-  background-color: lightgoldenrodyellow;
   outline: none;
   padding-left: 5px;
 }
-.dark-mode .label-name {
-  color: white;
-}
 .label-name {
   font-size: 1rem;
-}
-.dark-mode .label-cost {
-  color: white;
 }
 .label-cost {
   font-size: 1rem;
@@ -518,4 +522,11 @@ input#name {
 }
 .dark-mode .sidebar-icon {
   color: white;
+}
+@media screen and (max-width:425px) {
+  .jqNmJQ {
+  width: 100vw;
+  margin-left: -82px;
+  padding: 0;
+}
 }

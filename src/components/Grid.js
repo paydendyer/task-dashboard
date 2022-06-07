@@ -5,13 +5,12 @@ import Notes from '../pages/Notes';
 import ToDo from "../pages/ToDo";
 import Weather from "../pages/Weather";
 import Budget from '../pages/Budget';
-import {Link} from "react-router-dom";
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 
 
 const layout = [
-  { i: "tile-two", x: 0, y: 0, w: 1, h: 2 },
+  { i: "tile-two", x: 0, y: 0, w: 1, h: 1 },
   { i: "tile-three", x: 2, y: 0, w: 1, h: 1 },
   { i: "tile-four", x: 4, y: 0, w: 1, h: 1 },
   { i: "tile-five", x: 6, y: 0, w: 1, h: 1 },
@@ -41,9 +40,8 @@ export const Grid = () => {
         width={1000}
         isDraggable={false}
       >
-        <Link to={"../pages/Notes"}>View Full Page</Link>
-        <GridItemWrapper key="tile-two">
-          <GridItemContent><Notes /></GridItemContent>
+        <GridItemWrapper key="tile-two" >
+          <GridItemContent className="tile-two"><Notes /></GridItemContent>
         </GridItemWrapper>
 
         <GridItemWrapper key="tile-three">

@@ -17,7 +17,7 @@ const ExpenseItem = (props) => {
       <h3 className='props-name'>{props.name} </h3>
         <span className='props-cost'>
           ${props.cost}
-          <span className='budget-delete'> <TiDelete size='1.5em' onClick={handleDeleteExpense}></TiDelete></span>
+          <span className='budget-delete'> <TiDelete size='1.3em' onClick={handleDeleteExpense}></TiDelete></span>
       </span>
       </li>
       </div>

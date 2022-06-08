@@ -524,7 +524,14 @@ input#name {
   color: white;
 }
 /* Home Page */
-
+.dark-mode .home-container {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+.dark-mode div.react-grid-layout {
+  background-color: black;
+}
 .home-container {
   margin-left: 80px;
   margin-right: 0;

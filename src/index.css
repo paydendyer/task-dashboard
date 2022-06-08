@@ -109,7 +109,16 @@ textarea:focus {
   justify-content: space-between;
   white-space: pre-wrap;
 }
-
+@media screen and (max-width: 370px) {
+  .note {
+    width: 237px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .note {
+    max-width: calc(100% - 59px);
+  }
+}
 .note-footer {
   display: flex;
   align-items: center;

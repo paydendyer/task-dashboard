@@ -491,7 +491,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .sidebar-icon:hover {
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

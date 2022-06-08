@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route, Navigate} from 'react-router-dom';
 import ToDo from './pages/ToDo';
 import Notes from './pages/Notes';
 import ToggledarkMode from './components/ToggledarkMode';
@@ -22,8 +22,12 @@ const App = () => {
         <HashRouter>
           <SideBar />
           <Routes>
-            <Route exact path='/Home'
+            <Route exact path='/'
               element={<Home/>}/>
+              <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+    />
             <Route exact path='/ToDo'
               element={<ToDo/>}/>
             <Route exact path='/Notes'

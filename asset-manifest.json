@@ -1,5 +1,5 @@
 {
-  "main.css": "/task-dashboard/static/css/main.780cd95b.chunk.css",
+  "main.css": "/task-dashboard/static/css/main.02735ba3.chunk.css",
   "main.js": "/task-dashboard/static/js/main.8dd89560.chunk.js",
   "main.js.map": "/task-dashboard/static/js/main.8dd89560.chunk.js.map",
   "runtime~main.js": "/task-dashboard/static/js/runtime~main.705be681.js",
@@ -7,7 +7,7 @@
   "static/js/2.5b723806.chunk.js": "/task-dashboard/static/js/2.5b723806.chunk.js",
   "static/js/2.5b723806.chunk.js.map": "/task-dashboard/static/js/2.5b723806.chunk.js.map",
   "index.html": "/task-dashboard/index.html",
-  "precache-manifest.607b571430ce5d4723bafd2365fca0d6.js": "/task-dashboard/precache-manifest.607b571430ce5d4723bafd2365fca0d6.js",
+  "precache-manifest.8b8d9180c4dcbbe8c80e445bd80f9182.js": "/task-dashboard/precache-manifest.8b8d9180c4dcbbe8c80e445bd80f9182.js",
   "service-worker.js": "/task-dashboard/service-worker.js",
-  "static/css/main.780cd95b.chunk.css.map": "/task-dashboard/static/css/main.780cd95b.chunk.css.map"
+  "static/css/main.02735ba3.chunk.css.map": "/task-dashboard/static/css/main.02735ba3.chunk.css.map"
 }

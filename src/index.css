@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 body, html {
   font-family: 'Public Sans', sans-serif; 
- 
 }
 body {
    background-color: #DAC4F7;
@@ -86,6 +85,9 @@ textarea:focus {
   margin-top: 10px;
   margin-left: 135px;
   width: 135px !important;
+}
+.save-button {
+  width: 75px !important;
 }
 
 .save:hover {
@@ -515,7 +517,8 @@ input#name {
 /* Home Page */
 
 .home-container {
-  margin-left: 60px;
+  margin-left: 80px;
+  margin-right: 0;
 }
 .dark-mode .my-sidebar {
   background-color: black;
@@ -526,7 +529,8 @@ input#name {
 @media screen and (max-width:425px) {
   .jqNmJQ {
   width: 100vw;
-  margin-left: -82px;
-  padding: 0;
+  margin-left: -74px;
+  padding: 0 !important;
+  overflow: hidden;
 }
 }

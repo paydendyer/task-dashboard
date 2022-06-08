@@ -20,14 +20,16 @@ const App = () => {
       }>
         <ToggledarkMode handleToggleDarkMode={setDarkMode}/>
         <HashRouter>
-          <SideBar />
+          <SideBar/>
           <Routes>
             <Route exact path='/'
               element={<Home/>}/>
-              <Route
-        path="*"
-        element={<Navigate to="/" replace />}
-    />
+            <Route path="*"
+              element={
+                <Navigate
+              to="/"
+              replace/>
+              }/>
             <Route exact path='/ToDo'
               element={<ToDo/>}/>
             <Route exact path='/Notes'

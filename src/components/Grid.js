@@ -10,7 +10,7 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 
 
 const layout = [
-  { i: "tile-two", x: 0, y: 0, w: 1, h: 1 },
+  { i: "tile-two", x: 0, y: 0, w: 1, h: 2 },
   { i: "tile-three", x: 2, y: 0, w: 1, h: 1 },
   { i: "tile-four", x: 4, y: 0, w: 1, h: 1 },
   { i: "tile-five", x: 6, y: 0, w: 1, h: 1 },
@@ -25,7 +25,6 @@ const GridItemContent = styled.div`
 `;
 
 const Root = styled.div`
-  padding: 16px;
 `;
 
 
@@ -36,7 +35,7 @@ export const Grid = () => {
         layouts={{ lg: layout }}
         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
         cols={{ lg: 2, md: 2, sm: 2, xs: 2, xxs: 1 }}
-        rowHeight={700}
+        rowHeight={450}
         width={1000}
         isDraggable={false}
       >

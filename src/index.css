@@ -6,7 +6,7 @@ body, html {
   font-family: 'Public Sans', sans-serif; 
 }
 body {
-   background-color: #DAC4F7;
+   background-color: #FFF9EC;
    height: 100vh;
    background-size: 150px;
 }
@@ -63,7 +63,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .note.new {
-  background-color: #3A86FF;
+  background-color: #FACA66;
 }
 .notes-h1 {
   padding-top: 3%;
@@ -72,7 +72,7 @@ h2 {
 textarea {
   border: none;
   resize: none;
-  background-color: #3A86FF;
+  background-color: #FACA66;
 }
 textarea::placeholder {
   color: white !important;
@@ -81,29 +81,34 @@ textarea:focus {
   outline: none;
 }
 
-.save {
+.toggle-mode {
   margin-top: 10px;
   margin-left: 135px;
-  width: 135px !important;
+  width: 110px !important;
+  border-radius: 25px;
+  cursor: pointer;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+.dark-mode .toggle-mode {
+  color: white;
+  border-color: white;
 }
 .save-button {
   width: 75px !important;
 }
 
-.save:hover {
-  background-color: rgb(241, 190, 95);
-  cursor: pointer;
-}
 @media screen and (max-width:405px) {
-  .save {
+  .toggle-mode {
     margin-left: 105px;
   }
 }
 .note{
-  background-color: #fef68a;
+  background-color: #FFE3A8;
   border-radius: 10px;
   padding: 1rem;
-  min-height: 170px;
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -174,7 +179,7 @@ input {
   margin: 2px 5px;
 }
 #to-do-form input {
-  background-color: #3a86ff;
+  background-color: #6a83bf;
   border: 0;
   width: 200px;
   height: 50px;
@@ -218,7 +223,7 @@ input {
   width: 80px;
   border-radius: 25px;
   border: 0;
-  background-color: #FFBE0B;
+  background-color: #8DA6E2;
   cursor: pointer;
   color: white;
   /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
@@ -241,7 +246,7 @@ input {
   width: 19rem;
   height: 50px;
   margin: 20px auto;
-  background-color: #fef68a;
+  background-color: #BFCFF7;
   border-radius: 25px;
   /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
 }
@@ -337,13 +342,14 @@ input.list__check {
 }
 .weather-h2 {
   font-size: 6rem !important;
+  color: #7ECECA;
 }
 .weather-container {
   max-width: 600px;
   max-height: 700px;
   margin: auto;
   position: relative;
-  background-color: #fef68a;
+  background-color: white;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -360,7 +366,7 @@ input.list__check {
   text-align: center;
   width: 100%;
   border-radius: 15px;
-  background-color: #54DD9F;
+  background-color: #7ECECA;
 }
 .description {
   position: relative;
@@ -374,7 +380,7 @@ input.list__check {
 .weather-search {
   text-align: center;
   padding: 1rem;
-  background-color: #3A86FF;
+  background-color: #7ECECA;
   border-radius: 15px;
 }
 .weather-container input {
@@ -382,7 +388,7 @@ input.list__check {
   font-size: 1.2rem;
   border-radius: 25px;
   border: none;
-  background-color: #FFBE0B;
+  background-color: #d0fcfa;
   text-align: center;
 }
 @media screen and (max-width: 414px) {
@@ -406,19 +412,22 @@ input.list__check {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .budget-section {
-  background-color: #3A86FF;
+  background-color: #f3a19a;
   border-radius: 15px;
   text-align: center;
+  padding: 10px;
 }
 .remaining {
-  background-color: #FFBE0B;
+  background-color: #eec3c0;
   border-radius: 15px;
   text-align: center;
+  padding: 10px;
 }
 .expensetotal {
-  background-color: #FF674D;
+  background-color: #f3a19a;
   border-radius: 15px;
   text-align: center;
+  padding: 10px;
 }
 .expenses {
   text-align: center;
@@ -426,7 +435,7 @@ input.list__check {
 }
 .expenselist {
   list-style-type: none;
-  background-color: #54DD9F;
+  background-color: #eec3c0;
   padding-top: 10px;
   border-radius: 15px;
   padding-bottom: 10px;
@@ -440,7 +449,7 @@ ul {
 .add-expense {
   text-align: center;
   padding-top: 10px;
-  background-color: #fef68a;
+  background-color: #f3a19a;
   border-radius: 15px;
 }
 .add-expenses {
@@ -465,6 +474,10 @@ ul {
 .submit-button {
   display: inline !important;
   width: 80px !important;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
 }
 ul {
   list-style-type: none; /* Remove bullets */
@@ -475,7 +488,7 @@ ul {
 .expense-list li  {
   border: 1px solid #ddd; 
   margin-top: 10px; 
-  background-color: #f6f6f6; 
+  background-color: white; 
   padding: 15px; 
   border-radius: 15px;
   margin-right: 1rem;
@@ -520,9 +533,6 @@ input#name {
 .label-cost {
   font-size: 1rem;
 }
-.budget-h2-budget {
-  color: white;
-}
 /* Home Page */
 .dark-mode .home-container {
   background-color: black;
@@ -549,4 +559,17 @@ input#name {
   padding: 0 !important;
   overflow: hidden;
 }
+}
+.clock {
+  text-align: center;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 25px;
+  font-weight: 600;
+  border-color: black;
+  border-width: 3px;
+  margin-top: 5px;
 }

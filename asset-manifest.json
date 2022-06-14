@@ -1,13 +1,13 @@
 {
-  "main.css": "/task-dashboard/static/css/main.92f22bd4.chunk.css",
-  "main.js": "/task-dashboard/static/js/main.65940eca.chunk.js",
-  "main.js.map": "/task-dashboard/static/js/main.65940eca.chunk.js.map",
+  "main.css": "/task-dashboard/static/css/main.1d5fb68d.chunk.css",
+  "main.js": "/task-dashboard/static/js/main.9855c727.chunk.js",
+  "main.js.map": "/task-dashboard/static/js/main.9855c727.chunk.js.map",
   "runtime~main.js": "/task-dashboard/static/js/runtime~main.705be681.js",
   "runtime~main.js.map": "/task-dashboard/static/js/runtime~main.705be681.js.map",
-  "static/js/2.bd645437.chunk.js": "/task-dashboard/static/js/2.bd645437.chunk.js",
-  "static/js/2.bd645437.chunk.js.map": "/task-dashboard/static/js/2.bd645437.chunk.js.map",
+  "static/js/2.cba52097.chunk.js": "/task-dashboard/static/js/2.cba52097.chunk.js",
+  "static/js/2.cba52097.chunk.js.map": "/task-dashboard/static/js/2.cba52097.chunk.js.map",
   "index.html": "/task-dashboard/index.html",
-  "precache-manifest.ffe4f93b810d2aa5aa763ca96d5fa623.js": "/task-dashboard/precache-manifest.ffe4f93b810d2aa5aa763ca96d5fa623.js",
+  "precache-manifest.ed8fd5b72068a474a5f969329f2442ad.js": "/task-dashboard/precache-manifest.ed8fd5b72068a474a5f969329f2442ad.js",
   "service-worker.js": "/task-dashboard/service-worker.js",
-  "static/css/main.92f22bd4.chunk.css.map": "/task-dashboard/static/css/main.92f22bd4.chunk.css.map"
+  "static/css/main.1d5fb68d.chunk.css.map": "/task-dashboard/static/css/main.1d5fb68d.chunk.css.map"
 }

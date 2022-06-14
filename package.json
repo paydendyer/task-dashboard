@@ -1,9 +1,13 @@
 {
   "name": "task-dashboard",
+  "jest": {
+    "verbose": true
+  },
   "version": "0.1.0",
   "homepage": "https://paydendyer.github.io/task-dashboard",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.18.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
@@ -25,7 +29,7 @@
     "deploy": "gh-pages -d build",
     "start": "npm run compilecss && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --coverage",
     "eject": "react-scripts eject",
     "compilecss": "npx tailwindcss -i src/css/input.css -o dist/output.css "
   },

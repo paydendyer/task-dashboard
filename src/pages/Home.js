@@ -1,11 +1,11 @@
 import React from 'react';
+import Clock from '../components/Clock';
 import Grid from '../components/Grid';
 
 const Home = () => {
   return (
     <div className="home-container">
-
-      <h1 className="h1-home">Hi Payden, Welcome Home</h1>
+<Clock />
       <Grid/>
     </div>
   )

@@ -1,9 +1,18 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 
+const LOCAL_STORAGE_KEY = "location";
+function saveToLocalStorage(location) {
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(location));
+}
+
+function readFromLocalStorage() {
+  const storedLocations = localStorage.getItem(LOCAL_STORAGE_KEY);
+  return storedLocations ? JSON.parse(storedLocations) : [];
+}
 function Weather() {
-  const [data, setData] = useState({})
-  const [location, setLocation] = useState('')
+  const [data, setData] = useState(readFromLocalStorage());
+  const [location, setLocation] = useState(readFromLocalStorage());
 
   // API Key and URL
   const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
@@ -15,7 +24,8 @@ function Weather() {
         setData(response.data)
         console.log(response.data)
       })
-      setLocation('')
+      setLocation('');
+      saveToLocalStorage(location);
     }
   }
   return (

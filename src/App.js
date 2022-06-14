@@ -7,8 +7,8 @@ import Home from './pages/Home';
 import {useState} from 'react';
 import Budget from './pages/Budget';
 import Weather from './pages/Weather';
-import "./css/output.css";
 import SideBar from './components/SideBar';
+
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   return (

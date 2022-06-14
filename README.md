@@ -11,19 +11,18 @@ A React.js web app that helps manage day to day tasks.
 5. Context API
 6. Node.js
 7. Open Weather API
-8. WebPack
-9. ESLint
-10. Git
+8. Git
+9. Post CSS
 
 ## Description
-This web application takes sides of different shapes and returns information about that shape. This project was built to practice Test Driven Development with Jest and to learn about module bundling with WebPack to keep code base well-organized and efficient and incorporated linting and frontend dependencies.
+I created a Task Dashboard using React.js to help me better organize my day to day tasks. It includes a section for tracking to dos, writing notes, checking the weather, and keeping track of expenses. I utilized Tailwind CSS to add styling to my web app, and used Open Weather API to retrieve local weather data. 
 
 ## Setup Instructions
-After cloning the repository with git clone, open index.html in your browser.
+After cloning the repository with git clone, run 'npm start' in your terminal.
 
 ## Known Bugs
 No known bugs at this time.
 
 ## License
-Payden Dyer 5/15/2022
+Payden Dyer 6/6/2022
 

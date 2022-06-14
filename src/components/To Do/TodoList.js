@@ -21,6 +21,7 @@ function TodoList(props){
       />
         <input 
         type="text" 
+        data-testid="delete-todo"
         id={item.key} 
         value={item.text} 
         onChange ={

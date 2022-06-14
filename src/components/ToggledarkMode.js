@@ -7,7 +7,7 @@ const ToggledarkMode = ({ handleToggleDarkMode }) => {
         handleToggleDarkMode(
           (previousDarkMode)=> !previousDarkMode
           )
-          } className="save"
+          } className="toggle-mode"
           >
             Toggle Mode
         </button>

@@ -4,7 +4,7 @@
     "verbose": true
   },
   "version": "0.1.0",
-  "homepage": "/subdir/",
+  "homepage": "https://paydendyer.github.io/task-dashboard",
   "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.18.2",

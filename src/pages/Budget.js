@@ -10,7 +10,7 @@ import { AppProvider } from '../context/AppContext';
 const Budget = () => {
   return (
     <AppProvider >
-    <div className='my-container'>
+    <div className='my-container budget-container'>
       <h1 className="budget-h1"> Budget</h1>
       <div className="grid">
         <div className='budget-section'>

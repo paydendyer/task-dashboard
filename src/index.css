@@ -47,12 +47,12 @@ h2 {
   background-color: white;
   border-radius: 15px;
 }
-@media screen and (max-width: 425px) {
+/*@media screen and (max-width: 425px) {
 .my-container {
     margin-left: 5rem;
     margin-right: 1rem;
 }
-}
+} */
 .dark-mode .my-container {
   background: black;
   margin-bottom: 0px;
@@ -166,12 +166,11 @@ textarea:focus {
   background-color: white;
   border-radius: 15px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 560px) {
   .todo-container {
-    margin-left: 80px;
-    margin-right: 20px;
+    margin-top: 177px
   }
-}
+} 
 .dark-mode .todo-container {
   background: black;
 }
@@ -326,12 +325,11 @@ input.list__check {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 560px) {
 .weather-background {
-    margin-left: 5rem;
-    margin-right: 1rem;
+    margin-top: 185px;
 }
-}
+} 
 .dark-mode .weather-background {
   background-color: black;
 }
@@ -574,3 +572,9 @@ input#name {
   border-width: 3px;
   margin-top: 5px;
 }
+
+@media screen and (max-width: 560px) {
+  .budget-container {
+      margin-top: 197px;
+  }
+  } 

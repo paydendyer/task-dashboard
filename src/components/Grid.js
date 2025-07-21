@@ -39,7 +39,7 @@ export const Grid = () => {
         width={1000}
         isDraggable={false}
       >
-        <GridItemWrapper key="tile-two" >
+        <GridItemWrapper key="tile-two" className="tile-two" >
           <GridItemContent className="tile-two"><Notes /></GridItemContent>
         </GridItemWrapper>
 
